@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="jumbotron container-md " style="margin-top: 1cm">
-    <h1 class="display-3" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><strong> Selamat Datang!</strong></h1>
+    <h1 class="display-3" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><strong> SELAMAT DATANG!</strong></h1>
     <p class="lead">Disini kamu dapat melihat estimasi durasi waktu kerja kamu dengan menginputkan jam mulai kerja dan jam berakhir kerja</p>
     <hr class="my-4">
     <div class="container row">
@@ -79,10 +79,11 @@
         if ((mulaiBef>="13:00" && akhirBef > "17:00")&&akhirBef<"18:00"){
             hitung = hitung -1;
         }
-        if ((mulaiBef >= "13:00" && akhirBef>"19:00")){
+
+        if ((mulaiBef >= "13:00"  && akhirBef>"19:00")&&mulaiBef < "17:00"){
             hitung=hitung-2;
         }
-        if ((mulaiBef >= "17:00" && akhirBef>"19:00")){
+        if ((mulaiBef >= "17:00" && akhirBef>"19:00")&&mulaiBef < "19:00"){
             hitung = hitung -1;
         }
         
